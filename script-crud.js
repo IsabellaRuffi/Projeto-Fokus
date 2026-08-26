@@ -31,6 +31,7 @@ function criarElemenoTarefa(tarefa) {
 
     botao.onclick = () => {
         const novaDescricao = prompt("Qual é o novo nome da tarefa?")
+        console.log()
         paragrafo.textContent = novaDescricao
         tarefa.descricao = novaDescricao
         atualizarTarefas()
@@ -69,3 +70,4 @@ tarefas.forEach(tarefa => {
     const elementoTarefa = criarElemenoTarefa(tarefa)
     ulTarefas.append(elementoTarefa)
 });
+
